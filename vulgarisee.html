@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Le secteur des ESN — l'essentiel, simplement</title>
+<style>
+:root{--ink:#12233f;--ink2:#2a3c5a;--accent:#2b5cc4;--gold:#c8971d;--bg:#f6f7fb;--panel:#fff;--line:#e5e8ef;--muted:#5c6675;
+--r1:#2b5cc4;--r2:#138a8a;--r3:#6d5cc4;--r4:#c0392b;--r5:#c8971d;--r6:#2e8b57}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink2);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+.hero{background:linear-gradient(160deg,#12233f,#1c3a63 60%,#22467a);color:#fff;padding:56px 0 44px;border-bottom:5px solid var(--gold)}
+.kick{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:#9db8e4;font-weight:700;margin:0 0 14px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(30px,5.2vw,50px);line-height:1.06;margin:0 0 10px;font-weight:600}
+.hero .sub{font-size:19px;color:#d7e2f4;margin:0 0 26px;max-width:680px}
+.bigidea{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:22px 24px}
+.bigidea .t{font-family:Georgia,serif;font-size:clamp(21px,3.2vw,28px);color:#fff;line-height:1.25;margin:0 0 12px}
+.bigidea .t b{color:#ffd98a}
+.bigidea .taxi{font-size:15.5px;color:#cbd9ef;margin:0;padding-top:12px;border-top:1px dashed rgba(255,255,255,.2)}
+.bigidea .taxi b{color:#fff}
+/* red thread */
+.thread{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:26px 0 6px}
+.tcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 15px;position:relative}
+.tcard .n{width:30px;height:30px;border-radius:9px;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:8px}
+.tcard.t1 .n{background:var(--accent)}.tcard.t2 .n{background:#2f7d9c}.tcard.t3 .n{background:var(--gold)}.tcard.t4 .n{background:var(--ink)}
+.tcard h4{margin:0 0 3px;font-size:15px;color:var(--ink)}
+.tcard p{margin:0;font-size:13px;color:var(--muted);line-height:1.35}
+.tcard .ar{position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:#c2c8d4;font-weight:800;z-index:2}
+.tcard:last-child .ar{display:none}
+section.blk{padding:34px 0 6px}
+.shead{display:flex;align-items:center;gap:14px;margin:0 0 6px}
+.shead .sn{font-family:Georgia,serif;font-size:34px;font-weight:700;color:var(--accent);line-height:1}
+.shead h2{font-family:Georgia,serif;font-size:26px;color:var(--ink);margin:0;font-weight:600}
+.slead{color:var(--muted);font-size:16px;margin:0 0 18px;padding-left:48px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;border-left:5px solid var(--accent)}
+.card h3{margin:0 0 4px;font-size:18px;color:var(--ink);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.card p{margin:0;font-size:15.5px}
+.dot{width:11px;height:11px;border-radius:50%;flex:0 0 auto;display:inline-block}
+.stat{font-weight:800;color:var(--accent);font-size:15px;background:#eef3fb;padding:1px 9px;border-radius:20px;white-space:nowrap}
+.stat.red{color:#c0392b;background:#fde_ceb;background:#fdecea}
+.f1{border-left-color:var(--r1)}.f2{border-left-color:var(--r5)}.f3{border-left-color:#2f7d9c}.f4{border-left-color:var(--r4)}.f5{border-left-color:var(--r6)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.statbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.statbox .big{font-size:30px;font-weight:800;color:var(--ink);line-height:1.05}
+.statbox .big.up{color:#17a06a}.statbox .big.down{color:#c0392b}
+.statbox .lab{font-size:14px;color:var(--ink2);margin-top:4px}
+.taxibox{background:linear-gradient(135deg,#fff8 e8,#fdf3d9);background:#fdf3d9;border:1px solid #ecd9a6;border-radius:14px;padding:18px 20px;margin:6px 0 14px}
+.taxibox b{color:#7a5c12}
+.act{background:linear-gradient(180deg,#fff,#f6f9ff);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:14px;padding:16px 18px;margin:0 0 12px}
+.act h3{margin:0 0 4px;font-size:18px;color:var(--ink)}
+.act .num{color:var(--gold);font-weight:800}
+.nb{background:#132a4d;color:#e8eef8;border-radius:14px;padding:18px 20px;margin:14px 0}
+.nb b{color:#ffd98a}
+.case{background:#eefaf4;border:1px solid #bfe6d3;border-left:5px solid #17a06a;border-radius:14px;padding:16px 18px;margin:12px 0}
+.case b{color:#0f6b47}
+.concl{background:linear-gradient(160deg,#12233f,#22467a);color:#fff;border-radius:18px;padding:30px 28px;margin:30px 0 10px;text-align:center}
+.concl .p{font-family:Georgia,serif;font-size:clamp(20px,3vw,27px);line-height:1.3;margin:0}
+.concl .p b{color:#ffd98a}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12.5px;color:var(--muted);margin:8px 0 0;padding-left:48px}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.foot{color:var(--muted);font-size:12.5px;text-align:center;padding:26px 0 50px}
+.btn{display:inline-block;margin-top:20px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;padding:9px 16px;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+@media(max-width:760px){.thread{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.tcard .ar{display:none}.slead,.legend{padding-left:0}}
+@media print{body{background:#fff;font-size:12pt}.hero{background:#12233f!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.btn{display:none}section.blk,.card,.act,.statbox,.taxibox,.case,.nb,.concl{break-inside:avoid}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+
+<header class="hero"><div class="wrap">
+<p class="kick">Octo · Secteur des ESN & IA — la version simple</p>
+<h1>Le secteur a changé de règles.<br>Voici l'essentiel, simplement.</h1>
+<p class="sub">Comprendre en 10 minutes ce qui se passe, pourquoi, et ce qu'Octo doit en faire. Une seule idée à retenir&nbsp;:</p>
+<div class="bigidea">
+<p class="t">Tant qu'on vend <b>du temps</b>, l'IA est une menace. Si on vend <b>un résultat</b>, elle devient un multiplicateur.</p>
+<p class="taxi"><b>L'image :</b> facturer au temps quand l'IA va 3× plus vite, c'est comme un taxi payé à la durée qui roulerait soudain 3× plus vite — la course rapporte moins. Le modèle punit celui qui adopte l'IA.</p>
+</div>
+<button class="btn" onclick="window.print()">⎙ Imprimer / PDF</button>
+</div></header>
+
+<div class="wrap">
+
+<div class="thread">
+<div class="tcard t1"><div class="n">1</div><h4>Des forces qu'on subit</h4><p>Ce qui a changé, et qu'aucune ESN ne contrôle.</p><span class="ar">→</span></div>
+<div class="tcard t2"><div class="n">2</div><h4>Ce qu'on voit déjà</h4><p>Les effets, chiffrés, sur le marché.</p><span class="ar">→</span></div>
+<div class="tcard t3"><div class="n">3</div><h4>Ce que ça change</h4><p>La transformation du modèle qu'on en déduit.</p><span class="ar">→</span></div>
+<div class="tcard t4"><div class="n">4</div><h4>Ce qu'Octo fait</h4><p>Agir pour en profiter, pas le subir.</p></div>
+</div>
+<p style="text-align:center;color:var(--muted);font-size:14px;margin:14px 0 0">On lit ce document dans cet ordre : chaque étape découle de la précédente. C'est le <b>fil rouge</b>.</p>
+
+<!-- PARTIE 1 -->
+<section class="blk">
+<div class="shead"><span class="sn">1</span><h2>Ce qui a changé (les forces)</h2></div>
+<p class="slead">Cinq forces venues de l'extérieur. On ne les a pas choisies ; elles s'imposent à tout le monde.</p>
+
+<div class="card f1"><h3><span class="dot" style="background:var(--r1)"></span>L'IA fait le travail « banalisé » — et le rend quasi gratuit <span class="stat">code, tests, doc, support</span></h3>
+<p>Les assistants comme Copilot écrivent déjà près de <b>la moitié du code</b> ; les gains de productivité des ESN passent de <b>15 % à 22 %</b>. Le coût du travail répétitif s'effondre.</p></div>
+
+<div class="card f2"><h3><span class="dot" style="background:var(--r5)"></span>Le « carburant » de l'IA (le calcul) est rare et cher <span class="stat">GPU +40 %</span></h3>
+<p>Construire et faire tourner l'IA coûte de plus en plus cher : <b>725 milliards $</b> investis par les géants du cloud en 2026, prix des puces et de la mémoire en forte hausse. Le calcul devient une matière première stratégique — « le GPU, c'est notre eau ».</p></div>
+
+<div class="card f3"><h3><span class="dot" style="background:#2f7d9c"></span>L'argent est redevenu cher → on exige des résultats vite <span class="stat">−44 Md€ budget FR</span></h3>
+<p>Taux d'intérêt élevés, austérité budgétaire en France : les clients scrutent chaque dépense et veulent un retour sur investissement rapide et prouvé.</p></div>
+
+<div class="card f4"><h3><span class="dot" style="background:var(--r4)"></span>La géopolitique entre dans l'informatique <span class="stat">souveraineté</span></h3>
+<p>Dépendance aux géants américains, lois extraterritoriales : au Sénat, Microsoft a reconnu <b>« ne pas pouvoir garantir »</b> que les données de l'État français échappent à une injonction américaine. La souveraineté devient un critère d'achat.</p></div>
+
+<div class="card f5"><h3><span class="dot" style="background:var(--r6)"></span>L'IA crée de nouveaux risques de sécurité <span class="stat">nouvelle menace</span></h3>
+<p>En novembre 2025, un assistant IA (Claude Code) a été détourné par un groupe étatique pour mener une cyberattaque quasi automatisée. Le code écrit par l'IA embarque aussi ses propres failles. La sécurité devient l'affaire de chaque mission.</p></div>
+<div class="legend">
+<span><span class="dot" style="background:var(--r1)"></span>Règle 1 — valeur du temps</span>
+<span><span class="dot" style="background:var(--r5)"></span>Règle 5 — GPU rare</span>
+<span><span class="dot" style="background:var(--r4)"></span>Règle 4 — géopolitique</span>
+<span><span class="dot" style="background:var(--r6)"></span>Règle 6 — sécurité</span>
+<span style="color:var(--muted)">(les 6 règles de la page 1 du DG)</span>
+</div>
+</section>
+
+<!-- PARTIE 2 -->
+<section class="blk">
+<div class="shead"><span class="sn">2</span><h2>Ce qu'on voit déjà (les faits)</h2></div>
+<p class="slead">Ces forces produisent des effets déjà mesurables. Les chiffres parlent.</p>
+
+<div class="grid2">
+<div class="statbox"><div class="big">+14 % <span style="font-size:16px;color:var(--muted)">vs</span> <span class="down">−1,8 %</span></div><div class="lab">Le marché IT mondial explose (data centers +56 %)… mais les <b>ESN françaises reculent</b> — 1ʳᵉ baisse en plus de 10 ans. Un marché à deux vitesses.</div></div>
+<div class="statbox"><div class="big up">+35 %</div><div class="lab">de chiffre d'affaires <b>par personne</b>, à effectifs quasi stables. Le lien historique « plus de gens = plus de CA » se casse (Inde : −42 000 postes).</div></div>
+<div class="statbox"><div class="big down">−25 à −30 %</div><div class="lab">Les clients <b>réclament les gains</b> : renégociations en cours de contrat. Même l'État français demande de baisser les factures des prestataires (au nom de l'IA).</div></div>
+<div class="statbox"><div class="big down">95 %</div><div class="lab">des projets IA <b>sans résultat mesurable</b>. Le blocage n'est pas la technologie, c'est l'organisation. Ce que les clients achètent : méthode, produit, accompagnement.</div></div>
+</div>
+<div class="card" style="border-left-color:var(--r1);margin-top:12px"><h3><span class="dot" style="background:var(--r1)"></span>Même les éditeurs de logiciels décrochent</h3>
+<p>La Bourse a sanctionné le logiciel (« SaaSpocalypse » : <b>285 milliards $ effacés en 48 h</b> début 2026) ; le prix « par siège » s'effrite. Les mêmes forces frappent tout le secteur, pas seulement les ESN.</p></div>
+</section>
+
+<!-- PARTIE 3 -->
+<section class="blk">
+<div class="shead"><span class="sn">3</span><h2>Ce que ça veut dire (la transformation)</h2></div>
+<p class="slead">En reliant les faits, on comprend que c'est le modèle lui-même qui change.</p>
+
+<div class="taxibox"><b>Le cœur du problème.</b> Le chiffre d'affaires d'une ESN, c'est&nbsp;: <b>nombre de personnes × jours facturés × tarif</b>. Si l'IA fait le même travail en moins de jours, on facture moins. <b>Un gain de productivité détruit du chiffre d'affaires.</b> Le modèle « au temps » a atteint son plafond — et il punit celui qui adopte l'IA.</div>
+
+<div class="card"><h3>➊ La valeur passe du temps au résultat</h3><p>On ne vend plus des jours, on vend un résultat (au forfait, à l'usage). <b>Mais attention :</b> vendre un résultat, c'est prendre le risque à la place du client. Il faut donc <b>connaître précisément son coût</b> (IA comprise) pour ne pas vendre à perte.</p></div>
+<div class="card"><h3>➋ Les équipes changent de forme — et un angle mort apparaît</h3><p>Moins de juniors (l'IA fait leurs tâches) : la « pyramide » devient un « diamant ». <b>L'angle mort :</b> si on ne recrute plus de juniors, <b>qui seront les seniors de demain ?</b></p></div>
+<div class="card"><h3>➌ La sous-traitance se recompose</h3><p>Avec l'IA, les clients peuvent construire eux-mêmes ce qu'ils achetaient (« build vs buy » rebattu). Le « faire-faire » banalisé rétrécit ; un rôle nouveau s'ouvre : aider le client à construire et à gouverner.</p></div>
+<div class="card"><h3>➍ Ce qui se vend devient immatériel</h3><p>Puisque l'exécution se banalise, la valeur se déplace vers la <b>méthode</b>, les <b>produits réutilisables</b> et la <b>confiance</b> (souveraineté, sécurité).</p></div>
+</section>
+
+<!-- PARTIE 4 -->
+<section class="blk">
+<div class="shead"><span class="sn">4</span><h2>Ce qu'Octo doit faire</h2></div>
+<p class="slead">La réponse, alignée sur la stratégie FY27 : « vendre un résultat, pas du temps ».</p>
+
+<div class="act"><h3><span class="num">1.</span> Vendre un résultat — en maîtrisant le coût réel de l'IA</h3><p>Basculer vers le forfait / l'usage. L'offre la plus vendable tout de suite : le <b>« FinOps IA »</b> (aider le client à maîtriser sa facture d'IA) — un résultat chiffrable et immédiat. Et parler au directeur financier en coûts et en valeur, pas en jours.</p></div>
+<div class="act"><h3><span class="num">2.</span> Faire de la souveraineté une « assurance »</h3><p>Une offre souveraine calibrée — « juste le nécessaire » — cohérente avec l'ADN d'utilité publique et les deux tiers d'activité dans le public, la santé, le souverain.</p></div>
+<div class="act"><h3><span class="num">3.</span> Productiser, revendre, « construire pour »</h3><p>Transformer l'expertise en produits réutilisables, développer le « resell » avec des partenaires, et jouer le rôle de <b>constructeur-opérateur</b> plutôt que de fournisseur de bras.</p></div>
+<div class="act"><h3><span class="num">4.</span> Sécuriser chaque mission &amp; fabriquer les seniors de demain</h3><p>La sécurité de l'IA devient une offre à part entière. Et il faut inventer une nouvelle façon de former (Academy, apprentissage par l'orchestration d'agents) pour ne pas assécher le vivier d'expertise.</p></div>
+
+<div class="case"><b>Ça a déjà commencé — avec ses pièges.</b> McKinsey adosse déjà <b>~25 %</b> de ses honoraires au résultat ; Salesforce facture <b>2 $ par conversation résolue</b>. Mais le piège est réel : Intercom facturait des « résolutions » qui n'en étaient pas (un simple silence de 24 h). <b>La bataille se joue sur la définition du résultat</b>, pas sur le prix.</div>
+
+<div class="nb"><b>NB — Octo dans Accenture.</b> Le groupe apporte l'échelle, les plateformes IA, les grands comptes et une caution (Accenture opère le même virage). La tension à jouer avec lucidité : vendre de la souveraineté française en étant filiale d'un groupe américain (soumis au CLOUD Act) — d'où une « souveraineté opérationnelle » (données en Europe, opérées localement) assumée honnêtement.</div>
+</section>
+
+<div class="concl"><p class="p">Le monde a changé de règles.<br>Vendre un résultat plutôt que du temps n'est plus une option : <b>c'est la condition</b> pour que l'IA devienne notre multiplicateur.</p></div>
+
+<p class="foot">Version simplifiée — base de réflexion pour la présentation. La version détaillée et sourcée existe séparément. Document interne, non indexé.</p>
+</div>
+</body></html>
